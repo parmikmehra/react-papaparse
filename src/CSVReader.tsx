@@ -356,6 +356,7 @@ export default class CSVReader extends React.Component<Props, State> {
   };
 
   fileChange = (e: any) => {
+    console.log(e.target.files)
     const { target } = e;
     this.setState({ displayProgressBarStatus: 'block' }, () => {
       this.handleDrop(target);
